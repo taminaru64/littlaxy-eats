@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>リトラクシー ～星を巡るエネルギー～</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="icon.ico">
+    </head>
+    <body>
+        <nav class="menu">
+            <h1>リトラクシー ～星を巡るエネルギー～</h1>
+            <details>
+                <summary>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </summary>
+                <div class="content">
+                    <div class="list">
+                        <a href="#concept">コンセプト</a>
+                        <a href="#pv">紹介動画</a>
+                        <a href="#feature1">特徴1</a>
+                        <a href="#feature2">特徴2</a>
+                        <a href="#feature3">特徴3</a>
+                        <a href="#info">ゲーム情報</a>
+                        <a href="#last">最後に</a>
+                    </div>
+                </div>
+            </details>
+        </nav>
+        <div class="canvas">
+            <div class="background" style="--zpos: -50px; --scale: 1.8" id="background"></div>
+            <div class="backview" id="backview">
+                <img class="image" src="img/Player.png" style="--radius: 300px; --xpos: 30dvw; --ypos: 5%; --zpos: -10px; --rotate: -120deg;"></img>
+                <img class="image" src="img/Player.png" style="--radius: 200px; --xpos: -40dvw; --ypos: 85%; --zpos: -10px; --rotate: 20deg;"></img>
+            </div>
+            <div class="frontview" id="frontview">
+            </div>
+            <div class="view" id="view">
+                <div class="topview">
+                    <div class="content">
+                        <h2>リトラクシー<br>～星を巡るエネルギー～</h2>
+                        <p>
+                            Littlaxy: Energy Around the Stars
+                        </p>
+                    </div>
+                </div>
+                <main>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="concept"></div>
+                        <div class="title">
+                            <h2>コンセプト</h2>
+                            <h3>- Concept -</h3>
+                        </div>
+                        <p>
+                            本作は、PCのバッテリーが宇宙船と連動する「バッテリー連動型・スローライフ」ゲーム。<br>
+                            <br>
+                            バッテリー残量に応じて、離陸・着陸を繰り返し、<br>
+                            生まれて間もない小さな宇宙「リトラクシー」を旅しよう。<br>
+                        </p>
+                    </div>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="pv"></div>
+                        <div class="title">
+                            <h2>紹介動画</h2>
+                            <h3>- PV -</h3>
+                        </div>
+                        <p>
+                            <iframe class="center" width="711" height="400" src="https://drive.google.com/file/d/1jMKrmzBXIkKm11iFwZCYmftTZ2CAbM-W/preview" frameborder="0"></iframe>
+                        </p>
+                    </div>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="feature1"></div>
+                        <div class="title">
+                            <h2>特徴1 バッテリーの連動</h2>
+                            <h3>- Feature1 -</h3>
+                        </div>
+                        <p>
+                            あなたの目の前にある「PCのバッテリー」は、<br>
+                            「宇宙船」だけでなく、「ゲームのサイクル」自体と連動します。<br>
+                            <br>
+                            バッテリー残量が高ければ「離陸」でき、少なければ「着陸」できるというシステムにより、<br>
+                            プレーヤーはバッテリーの充電ケーブルを状況に応じて抜き差しする必要が出てきます。<br>
+                            <br>
+                            この動作により、目の前のPCがゲーム内の宇宙船とリンクしているかのような、<br>
+                            唯一無二の没入感を生み出します。
+                            <img class="center" src="img/BatteryInterlockDiagram.jpg" width="711" height="400"></img>
+                        </p>
+                    </div>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="feature2"></div>
+                        <div class="title">
+                            <h2>特徴2 「時間」を意識した設計</h2>
+                            <h3>- Feature2 -</h3>
+                        </div>
+                        <p>
+                            バッテリーの増減によって発生する「待ち時間」は、<br>
+                            タイパを重視する現代のプレイヤーを解放する「価値ある時間」であると言えます。<br>
+                            <br>
+                            本作は、宇宙の壮大かつ幻想的な世界観により、ゆったりとした時間を提供します。
+                        </p>
+                    </div>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="feature3"></div>
+                        <div class="title">
+                            <h2>特徴3 宇宙船での生活・惑星での生活</h2>
+                            <h3>- Feature3 -</h3>
+                        </div>
+                        <p>
+                            本作は、バッテリーの増減に合わせて、「宇宙船」と「惑星」を行き来します。<br>
+                            <br>
+                            「宇宙船」では、次に着陸する惑星を選んだり、宇宙船のメンテナンスをしたりと、<br>
+                            惑星での生活に向けて、準備を進めます。<br>
+                            <img class="center" src="img/Spaceship.png" width="711" height="400"></img>
+                            <br>
+                            「惑星」では、素材を集めて行動範囲を広げたり、現地のキャラクターと交流したりと、<br>
+                            惑星ごとに違った体験を味わうことが出来ます。
+                            <img class="center" src="img/Planet.png" width="711" height="400"></img>
+                        </p>
+                    </div>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="info"></div>
+                        <div class="title">
+                            <h2>ゲーム情報</h2>
+                            <h3>- Info -</h3>
+                        </div>
+                        <table>
+                            <tr><td>タイトル</td><td>リトラクシー ～星を巡るエネルギー～</td></tr>
+                            <tr><td>タイトル(英語名)</td><td>Littlaxy: Energy Around the Stars</td></tr>
+                            <tr><td>ジャンル</td><td>バッテリー連動型・スローライフ</td></tr>
+                            <tr><td>対応プラットフォーム</td><td>Windowsを搭載したノートPC<br>※デスクトップPCでは遊べません</td></tr>
+                            <tr><td>価格</td><td>無料</td></tr>
+                        </table>
+                    </div>
+                    <div class="cardview">
+                        <div class="anchor-offset" id="last"></div>
+                        <div class="title">
+                            <h2>最後に</h2>
+                            <h3>- Last -</h3>
+                        </div>
+                        <p>
+                            ここは、生まれて間もない小さな宇宙「リトラクシー」。<br>
+                            <br>
+                            テレワークやメンテナンスをこなしつつ、次の行き先を決める宇宙船での生活。<br>
+                            素材を収集し、道を開拓し、現地の生き物と交流する惑星での生活。<br>
+                            <br>
+                            2種類の生活を味わえる、バッテリー連動型・スローライフをぜひ体感してください。<br>
+                        </p>
+                    </div>
+                </main>
+
+                <footer>
+                    <div class="content">
+                        <h2>
+                            <a href="https://taminaru64.github.io/littlaxy-eats/" rel="noopener noreferrer">リトラクシー　～星を巡るエネルギー～</a>
+                        </h2>
+                        <div class="urls">
+                            <a href="https://taminaru64.github.io/Site/" rel="noopener noreferrer">開発者公式サイト</a>
+                            <a href="https://youtube.com/@littlaxy-to-player" target="_blank" rel="noopener noreferrer">Youtube(遊ぶ人へ)</a>
+                            <a href="https://youtube.com/@littlaxy-to-creator" target="_blank" rel="noopener noreferrer">Youtube(創る人へ)</a>
+                            <a href="https://x.com/taminaru64" target="_blank" rel="noopener noreferrer">X</a>
+                            <a href="https://note.com/taminaru64" target="_blank" rel="noopener noreferrer">note</a>
+                            <a href="https://github.com/taminaru64" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                        <p>
+                            制作: たみなる
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
