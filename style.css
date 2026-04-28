@@ -462,6 +462,7 @@ main {
 }
 .cardview .center {
     width: min(700px, calc(100% - 20px));
+    aspect-ratio: 16 / 9;
     margin: auto;
     padding: 10px;
     display: block;
